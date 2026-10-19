@@ -78,12 +78,21 @@ public class Main {
         char desplazamiento = sc.next().charAt(0);
         System.out.println("La letra elegida es: " + desplazamiento);
 
-        //11º) Yoel
-
+        //Yoel
         int filaYoda = 0;
         int columnaYoda = 0;
 
         matriz[filaYoda][columnaYoda] = Yoda;
-        if (matriz[filaYoda][columnaYoda] = 'D');
+        if (desplazamiento == 'D'){
+            columnaYoda = columnaYoda + 1;
+            matriz[filaYoda][columnaYoda] = Yoda;
+        }
+
+        for (int fila = 0; fila < matriz.length ; fila++) {
+            for (int columna = 0; columna < matriz.length ; columna++) {
+                System.out.print(matriz[fila][columna] + " ");
+            }
+            System.out.println();
+        }
     }
 }
